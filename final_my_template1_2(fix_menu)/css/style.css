@@ -1,0 +1,299 @@
+/*—список подключеных шрифтов*/
+
+/*@font-face {
+    font-family: "JournalRegular";
+    src: url("journal-webfont.eot");
+    src: url("journal-webfont.eot?#iefix") format("embedded-opentype"),
+         url("journal-webfont.woff") format("woff"),
+         url("journal-webfont.ttf") format("truetype"),
+         url("journal-webfont.svg#JournalRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;*/
+}
+
+body{ font-family: Geneva, Arial, Helvetica, sans-serif;}
+
+/*стили стандартынх тегов*/
+h1{
+   /*
+    color:#;
+    font-size:px;
+    font-family:;
+	line-height:px;
+    letter-spacing:px;*/
+}
+h2{
+   /*
+    color:#;
+    font-size:px;
+    font-family:;
+	line-height:px;
+    letter-spacing:px;*/
+}
+h3{
+   /*
+    color:#;
+    font-size:px;
+    font-family:;
+	line-height:px;
+    letter-spacing:px;*/
+}
+h4{
+   /*
+    color:#;
+    font-size:px;
+    font-family:;
+	line-height:px;
+    letter-spacing:px;*/
+}
+p{
+   /*
+    color:#;
+    font-size:px;
+    font-family:;
+	line-height:px;
+    letter-spacing:px;*/
+} 
+a{
+	/*
+    color:#;
+    font-size:px;
+    font-family:;
+	line-height:px;
+    letter-spacing:px;*/
+}
+a:hover{text-decoration:none;}
+
+.clear{clear:both;}/*очищающий блок*/
+
+.outline{outline:1px solid #cc0000;} /*тестовая рамка красного цвета*/
+
+.wrap{
+	
+}
+
+#navbar{
+	height:auto;
+	transition: background-color 1s; /*добавляет прозрачности*/
+}
+
+
+
+#one, #two, #three, #four, #five{	
+	height:300px;
+}
+#one{/*включить если слайдер находится под фиксированной менюхой*/
+	margin-top:-40px;
+	padding-top:40px;
+}
+
+/*не выдел¤етс¤ текст*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently*/
+}
+
+
+/*  кнопка "на верх" */
+
+  #top {
+    z-index:100;
+    bottom: 0;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 25px; /*отступ от правого кра¤*/
+    width:48px; /*ширина*/
+    height:33px;/*высота*/
+    background-color:rgba(0, 0, 0, 0.69);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+	text-align:center;
+	transition: height 1s;
+}
+#top span{
+    padding-top: 10px;
+    display: block;
+    font-family: Arial;
+    font-size: 15px;
+    color: #FFF;
+}
+#top i {
+		margin-top:10px;
+        color:#fff;
+        font-size:12px;
+}
+
+#top:hover{
+	color:#fff;
+	background-color:#000;
+	height:70px;
+	transition: height 1s;
+
+}
+/* конец  нопка "на верх" */
+
+
+/* -----------------  menu -----------------*/
+/*gamburger*/
+.navbar-inverse .navbar-toggle .icon-bar{
+	background-color:#fff; /* три полоски */
+}
+
+.navbar-inverse .navbar-toggle:hover span,
+ .navbar-inverse .navbar-toggle:focus span{
+	 background-color:#ddd;
+	 transition:background-color 1s;
+ }
+
+
+
+.navbar-inverse .navbar-toggle{
+	border-color: #333; /* рамка гамбургера */
+	background-color: #000; /* фон гамбургера */
+	transition:background-color 1s;
+}
+.navbar-inverse .navbar-toggle:hover,
+ .navbar-inverse .navbar-toggle:focus{
+	border-color: #ddd; /* рамка гамбургера при навидении и в фокусе*/
+	background-color: #333; /* фон гамбургера при навидении и в фокусе */
+	
+	transition:background-color 1s;
+	transition:border-color 1s;
+}
+
+/*end gamburger*/
+
+.navbar-inverse .navbar-nav > li > a {
+    text-align: center;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+	background-color:#ddd;
+	transition: background-color 1s;
+}
+
+.navbar-inverse {
+    background-color: #222;
+    /* border-color: #080808; */
+    border: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a{ /*параметры ссылок*/
+     
+    color:#;
+    font-size:16px;
+    font-family:;
+	line-height:px;
+    letter-spacing:px;
+	width:px;
+	height:px;
+	transition: font-size 0.5s;
+}
+
+.navbar-brand{
+	height:auto;
+}
+.navbar-brand img{
+	transition: width 0.5s;
+}
+
+/* -----------------  End  menu -----------------*/
+
+/*---------------- Slider ----------------- */
+
+	.item{height:200px;border:1px solid #cc0000;} /*высота слайда*/
+
+	/*кнопки RADIOBUTTON */
+	
+	.carousel-indicators {
+		bottom: 20px; /* высота индикаторов */
+	}
+	
+	.carousel-indicators li{
+		border:1px solid #333;
+		width:15px;
+		height:15px;
+		margin:0;
+		background-color:#fff;
+		transition: background-color 1s;
+	}
+	.carousel-indicators .active{
+			border:1px solid #333;
+			width:15px;
+			height:15px;
+			margin:0;
+			background-color:#333;
+		}	
+		
+	/* HOVER & FOCUS */	
+	.carousel-indicators li:hover{
+		background-color:#333;
+		transition: background-color 0.5s;
+	}
+	
+	/*конец нопки RADIOBUTTON */
+	
+
+	/*кнопки LEFT | RIGHT*/
+	#slider1 .glyphicon-chevron-left,
+	#slider1 .glyphicon-chevron-right{
+		border:1px solid #cc0000;
+		color:#333;
+		font-size:12px;
+		width: 50px;
+		height: 50px;
+		background-color:#333;
+		top:50%; /* высота кнопки */
+		border-radius: 50px;
+		
+		/*background-image:url('../images/.png');*/
+		/*font-family:;*/
+	}
+	
+	
+	
+	.carousel-control.left,
+	.carousel-control.right{
+		background: inherit!important; /*фоновый градиент*/
+	}
+	
+	.glyphicon-chevron-left:before,
+	.glyphicon-chevron-right:before{
+		display:none; /*выключил иконку*/
+	}
+	
+	.carousel-control,
+	.carousel-control{
+		transition: opacity 0.5s;
+	}
+	
+	/* HOVER & FOCUS */
+	.carousel-control:hover,
+	.carousel-control:focus{
+		transition: opacity 0.5s;
+	}
+
+/* -----------------  End  Slider -----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
